@@ -1,8 +1,2 @@
-from functools import reduce
-n = int(input("Please Enter any Number"))
-
-# THE ONE-LINER
-factorial = reduce(lambda x, y: x * y, range(1, n+1))
-
-# THE RESULT
-print("The factorial of {} is".format(n),factorial)
+import functools
+print("The factorial is {}".format(functools.reduce(lambda x, y: x * y, range(1, int(input("enter the number: "))+1))))
